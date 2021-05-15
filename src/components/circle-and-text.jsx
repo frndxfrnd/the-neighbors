@@ -21,7 +21,7 @@ import { useTranslation } from 'react-i18next'
 //   )
 // }
 
-export default ({ reversed }) => {
+export default ({ reversed ,txt,image}) => {
   const { t } = useTranslation()
 
   return (
@@ -29,11 +29,12 @@ export default ({ reversed }) => {
       tw='flex flex-row gap-x-2 p-8'
       css={[reversed && tw`flex-row-reverse`]}
     >
-      <div tw='rounded-full h-24 w-24 flex flex-row items-center justify-center bg-c bg-center'>
-        Circle
-      </div>
+      <img
+      src={image} alt='LOGO'
+      tw='rounded-full h-24 w-24 flex flex-row items-center justify-center bg-c bg-center' />
+
       <div tw='w-96 leading-9'>
-        {t('first circle')}
+        {t(txt)}
       </div>
     </div>
   )

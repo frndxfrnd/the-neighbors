@@ -8,6 +8,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import MainLayout from '@/layouts/main'
 import ExplorePage from '@/pages/explore'
+import Login from '@/pages/sign-up'
+import SignUp from '@/pages/sign-up2'
 import JoinUsPage from '@/pages/join-us'
 
 export default () => {
@@ -20,14 +22,24 @@ export default () => {
   return (
     <Router>
       <Switch>
+        <Route path='/login'>
+          <Login />
+        </Route>
+        <Route path='/signup'>
+          <SignUp />
+        </Route>
         <Route path='/'>
           <MainLayout>
             <Switch>
-              <Route path='/join'>
-                <JoinUsPage />
+              <Route path='/SignUp'>
+                <SignUp />
+                {/* <JoinUsPage /> */}
               </Route>
               <Route path='/'>
                 <ExplorePage />
+              </Route>
+              <Route path='/Login'>
+                <Login />
               </Route>
             </Switch>
           </MainLayout>
