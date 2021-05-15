@@ -10,7 +10,8 @@ export default () => {
       resources: {
         en: {
           translation: {
-            'hello world': 'Hello World!'
+            'hello world': 'Hello World!',
+            'first circle': 'Stay connected with other local businesses in your community.Share and support your favorite stores, restaurants and businesses to empower them to do more.'
           }
         }
       },

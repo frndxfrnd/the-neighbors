@@ -16,7 +16,10 @@ module.exports = {
   ],
   plugins: [
     'macros',
-    '@compiled',
+    ['@compiled', {
+      importReact: false,
+      cache: true
+    }],
     hot && 'react-refresh/babel'
   ].filter(x => x)
 }
