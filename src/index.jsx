@@ -1,6 +1,7 @@
 import { render } from 'react-dom'
 
 import 'tailwindcss/dist/base.css'
+import '@/themes/default.css'
 
 import Suspence from '@/suspence'
 import Main from '@/main'

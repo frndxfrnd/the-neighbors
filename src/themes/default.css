@@ -1,0 +1,14 @@
+:root, [data-theme="default"] {
+  --color-a: #ffbd41;
+  --color-b: #e0e7ff;
+  --color-c: #60a5fa;
+  --color-d: #1e3a8a;
+  --color-e: #ffbd41;
+  --text-primary: var(--color-a);
+  --text-secondary: var(--color-b);
+  --text-accent: var(--color-c);
+  --bg-primary: var(--color-a);
+  --bg-secondary: var(--color-b);
+  --bg-accent: var(--color-c);
+  --bg-default: white;
+}

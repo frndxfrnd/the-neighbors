@@ -7,7 +7,6 @@ const ProgressBarPlugin = require('simple-progress-webpack-plugin')
 const CleanWebpackPlugin = require('clean-webpack-plugin').CleanWebpackPlugin
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = [
   async (_env, argv) => {
@@ -37,9 +36,7 @@ module.exports = [
       devtool: dev ? 'eval-source-map' : undefined,
       devServer: {
         contentBase: path.resolve(__dirname, 'dist'),
-        historyApiFallback: {
-          index: 'index.html'
-        }
+        historyApiFallback: true
       },
       plugins: [
         new CleanWebpackPlugin(),
@@ -54,25 +51,28 @@ module.exports = [
             ]
           }
         }),
-        new MiniCssExtractPlugin(),
         dev && hot && new webpack.HotModuleReplacementPlugin(),
         dev && hot && new ReactRefreshWebpackPlugin()
       ].filter(x => x),
       module: {
         rules: [
           {
-            test: /\.[jt]sx?$/,
+            test: /\.[jt]sx?$/i,
             exclude: /(node_modules)/,
             use: [
               'babel-loader'
             ]
           },
           {
-            test: /\.css$/,
+            test: /\.css$/i,
             use: [
-              MiniCssExtractPlugin.loader,
+              'style-loader',
               'css-loader'
             ]
+          },
+          {
+            test: /\.(png|jpe?g|gif|webp|svg)$/i,
+            type: 'asset/resource'
           }
         ]
       },
