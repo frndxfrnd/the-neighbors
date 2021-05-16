@@ -6,6 +6,11 @@ import CircleText from '@/components/circle-and-text'
 import BigCircle from '@/components/big-circle'
 import Card from '@/components/card'
 import Featured from '@/components/featured'
+import background from '@/assets/mainBackground.jpg'
+import handshake from '@/assets/handshake.png'
+import friends from '@/assets/friends.png'
+import idea from '@/assets/idea.png'
+
 //MUI card component
 // import Card from '@material-ui/core/Card';
 // import CardHeader from '@material-ui/core/CardHeader';
@@ -103,18 +108,19 @@ import Featured from '@/components/featured'
 
 export default (props) => {
   return (
-    <>
+    <div>
       <img />
 
       <div tw='container mx-auto'>
+
         <BigCircle />
 
         {/* tw='absolute bottom-20 right-56 h-56 w-56' */}
         <div tw="flex flex-row">
-        <div tw='w-1/2'>
-            <CircleText txt='first circle' image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg1Z5JP9CCoQ3wVUIjU_dGXBvXACYd_h442w&usqp=CAU"/>
-            <CircleText tw="w-40" reversed txt='second circle' image="https://c.ndtvimg.com/2020-05/9iuj3h1g_indian-food_625x300_19_May_20.jpg"/>
-            <CircleText txt='third circle' image="http://images.agoramedia.com/wte3.0/gcms/Best-Foods-to-Eat-When-Pregnant-722x406.jpg?width=414"/>
+        <div tw='w-1/2 py-20'>
+            <CircleText txt='first circle' image={handshake}/>
+            <CircleText tw="w-40" reversed txt='second circle' image={idea}/>
+            <CircleText txt='third circle' image={friends}/>
 
           </div>
 
@@ -123,7 +129,7 @@ export default (props) => {
           <Featured  />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 

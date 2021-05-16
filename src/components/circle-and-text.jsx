@@ -31,7 +31,7 @@ export default ({ reversed ,txt,image}) => {
     >
       <img
       src={image} alt='LOGO'
-      tw='rounded-full h-24 w-24 flex flex-row items-center justify-center bg-c bg-center' />
+      tw='rounded-full h-24 w-24 flex flex-row items-center justify-center bg-center' />
 
       <div tw='w-96 leading-9'>
         {t(txt)}

@@ -2,10 +2,11 @@ import '@compiled/react'
 import 'twin.macro'
 
 import Icon from '@/components/icon'
+import Image from '@/assets/city.jpeg'
 
 const footer = () => {
   return (
-    <footer tw='bg-d w-full p-2 py-7 text-white font-sans text-sm'>
+    <footer tw='bg-d w-full p-2 py-7 text-white font-sans text-sm rounded-t-lg'>
       <div tw='container mx-auto overflow-hidden '>
         <div tw='flex flex-row justify-between flex-wrap mx-8'>
 

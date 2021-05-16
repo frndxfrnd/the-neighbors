@@ -19,13 +19,24 @@ const foodResto = featuredNames[index];
 
 return (
 
-
-        <div tw="pl-40 pt-24 grid justify-items-center">
+    // pl-40 p-24  grid justify-items-center
+        <div tw="flex flex-col gap-y-2 w-max mx-auto items-center">
         <img
-      src={randomFeatured} alt='LOGO'
-      tw='rounded-lg border-4 h-96 w-auto bg-gray-500 grid justify-items-center justify-center' />
+      src={randomFeatured} alt='FoodResto'
+      tw='rounded-lg border-4 h-auto w-auto bg-gray-500 grid justify-items-center justify-center' />
+      {/* <div tw="items-center inline-block align-bottom border-4 font-bold py-2 px-4 rounded">
+          <div tw="text-center">
       {foodResto}
+      </div> */}
+
+        <button tw="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
+        Button
+        </button>
+      {/* </div> */}
 {/* <div tw="h-80 w-80 bg-gray-500 grid justify-items-center justify-center "> hello</div> */}
 </div>
     )
 }
+// tw='box-border h-32 w-3/4 p-4 border-4 text-center'
+// tw='box-border h-32 w-3/4 p-4 border-4 text-center'
+// tw='box-border h-32 w-3/4 p-4 border-4 text-center'

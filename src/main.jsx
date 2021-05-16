@@ -11,6 +11,7 @@ import ExplorePage from '@/pages/explore'
 import Login from '@/pages/sign-up'
 import SignUp from '@/pages/sign-up2'
 import JoinUsPage from '@/pages/join-us'
+import Discover from '@/pages/discover'
 
 export default () => {
   const { /* t, */ i18n } = useTranslation()
@@ -28,18 +29,20 @@ export default () => {
         <Route path='/signup'>
           <SignUp />
         </Route>
+        <Route path='/discover'>
+          <Discover />
+        </Route>
         <Route path='/'>
           <MainLayout>
             <Switch>
-              <Route path='/SignUp'>
-                <SignUp />
-                {/* <JoinUsPage /> */}
+              <Route path='/Login'>
+                <Login />
+              </Route>
+              <Route path='/Discover'>
+                <Discover />
               </Route>
               <Route path='/'>
                 <ExplorePage />
-              </Route>
-              <Route path='/Login'>
-                <Login />
               </Route>
             </Switch>
           </MainLayout>

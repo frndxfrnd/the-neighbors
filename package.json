@@ -71,8 +71,5 @@
   },
   "author": "iiwii",
   "license": "MIT",
-  "homepage": "https://iiwii.github.io",
-  "sideEffects": [
-    "**/*.css"
-  ]
+  "homepage": "https://iiwii.github.io"
 }

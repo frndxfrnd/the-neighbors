@@ -22,14 +22,6 @@ export default (props) => {
         <img tw='max-h-full max-w-full inset-1 mx-40' src={person} alt='person'/>
       </div>
 
-      {/*<div>
-        <h1 tw='text-center relative flex-grow w-80 text-2xl font-bold inset-2 py-96 '>{t('slogan')}</h1>
-      </div>    */}
-
-      {/* <div>
-        <p tw=' relative flex-grow flex flex-col gap-y-2 w-max mx-auto items-center place-self-center mb-4 text-2xl font-semibold'>{t('main message')}</p>
-      </div> */}
-
       <div tw='relative flex-grow flex flex-col gap-y-2 w-max mx-auto items-center place-self-center'>
         <h1 tw='text-center mb-4 text-4xl font-semibold'>Login to your account</h1>
         <Login />
