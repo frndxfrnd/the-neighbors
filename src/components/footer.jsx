@@ -11,24 +11,24 @@ const footer = () => {
         <div tw='flex flex-row justify-between flex-wrap mx-8'>
 
           <div tw='flex flex-col'>
-            <h1 tw='text-xl'>Business</h1>
+            <h1 tw='text-xl'>THE NEIGHBORS</h1>
           </div>
 
           <div tw='flex flex-col'>
-            <h1 tw='text-xl'>About Us</h1>
+            <h1 tw='text-xl'>ABOUT US</h1>
             <br />
             <p tw='w-40'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea iure, eos</p>
           </div>
 
           <div tw='flex flex-col'>
-            <h1 tw='text-xl'>Resources</h1>
+            <h1 tw='text-xl'>RESOURCES</h1>
             <br />
             <p>Google Maps</p>
             <p>Yelp</p>
           </div>
 
           <div tw='flex flex-col'>
-            <h1 tw='text-xl'>Contact Us</h1>
+            <h1 tw='text-xl'>CONTACT US</h1>
             <br />
             <p>514-123-4567</p>
             <p>contact@mail.ca</p>

@@ -22,13 +22,13 @@ export default (props) => {
   return (
     <nav tw='w-full flex flex-row justify-between p-2 bg-b px-10 py-3'>
       <div tw='w-12'>
-        <button><img onClick={ScrollTop} src={logo} alt='LOGO' /></button>
+        <button><img onClick={() => history.push('/')} src={logo} alt='LOGO' /></button>
       </div>
 
       {/* <div  /> */}
       <div tw='flex flex-row gap-x-4 items-center text-sm font-sans'>
-        <button onClick={Scroll}>About us</button>
-        <button onClick={Scroll}>Contact us</button>
+        <button onClick={() =>Scroll}>About us</button>
+        <button onClick={() =>Scroll}>Contact us</button>
         <button onClick={() => history.push('/Discover')}>Discover</button>
         <button onClick={() => history.push('/Login')} tw='px-5 py-2  rounded-full shadow-lg font-semibold text-yellow-50 bg-a transform hover:bg-yellow-600 transition duration-500'>Login</button>
       </div>

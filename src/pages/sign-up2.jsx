@@ -15,10 +15,10 @@ export default (props) => {
   return (
     <main tw='container mx-auto h-screen flex flex-row justify-around gap-x-52'>
       <div tw='absolute inset-0'>
-        <img tw=' object-cover' src={background} alt='background'/>
+        <img tw='h-full object-cover' src={background} alt='background'/>
       </div>
       <div tw='absolute inset-0'>
-        <img tw=' object-cover' src={yellowBackground} alt='background'/>
+        <img tw='h-full object-cover' src={yellowBackground} alt='background'/>
       </div>
       <div tw='relative flex-grow flex flex-col gap-y-2 w-max mx-auto items-center place-self-center m-80'>
         <h1 tw='mb-4 text-4xl font-semibold'>Sign Up</h1>

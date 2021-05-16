@@ -29,9 +29,10 @@ return (
       {foodResto}
       </div> */}
 
-        <button tw="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
-        Button
-        </button>
+        <div tw="bg-transparent text-blue-700 font-semibold py-2 px-4 border border-blue-500 rounded">
+
+        {foodResto}
+        </div>
       {/* </div> */}
 {/* <div tw="h-80 w-80 bg-gray-500 grid justify-items-center justify-center "> hello</div> */}
 </div>

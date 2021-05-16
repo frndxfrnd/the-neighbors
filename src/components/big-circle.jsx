@@ -18,7 +18,7 @@ export default () => {
 
       <div tw='flex-grow' />
       <div tw='flex flex-col gap-y-2 w-max mx-auto items-center'>
-        <h1 tw='flex flex-row mb-4 text-6xl'>The Neighbors</h1>
+        <h1 tw='flex flex-row mb-4 text-6xl text-center'>The Neighbors</h1>
         <div tw='w-96 leading-9 text-center'>
         Explore and discover what's new, fun and innovative at the heart of your community.
         Network and communicate with other local businesses, making every click count.

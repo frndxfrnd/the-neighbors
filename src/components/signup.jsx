@@ -20,7 +20,7 @@ const Signup = () => {
           <label>Business Name</label>
           <input
             type='username'
-            tw='w-full py-2 px-10 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4'
+            tw='w-full py-2 px-10  border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4'
             id='username'
             placeholder='Your Business Name'
             onChange={(e) => setUsername(e.target.value)}
@@ -30,7 +30,7 @@ const Signup = () => {
           <label>Email</label>
           <input
             type='email'
-            tw='w-full text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4 py-2 px-10'
+            tw='w-full border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4 py-2 px-10'
             id='email'
             placeholder='Your Email'
             onChange={(e) => setEmail(e.target.value)}
@@ -40,7 +40,17 @@ const Signup = () => {
           <label>Password</label>
           <input
             type='password'
-            tw='w-full py-2 px-10 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4'
+            tw='w-full py-2 px-10 border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4'
+            id='password'
+            placeholder='Your Password'
+            onChange={(e) => setPassword(e.target.value)}
+          />
+        </div>
+        <div tw='w-full'>
+          <label>Confirm your Password</label>
+          <input
+            type='password'
+            tw='w-full py-2 px-10 border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4'
             id='password'
             placeholder='Your Password'
             onChange={(e) => setPassword(e.target.value)}

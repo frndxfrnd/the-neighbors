@@ -29,15 +29,9 @@ export default () => {
         <Route path='/signup'>
           <SignUp />
         </Route>
-        <Route path='/discover'>
-          <Discover />
-        </Route>
         <Route path='/'>
           <MainLayout>
             <Switch>
-              <Route path='/Login'>
-                <Login />
-              </Route>
               <Route path='/Discover'>
                 <Discover />
               </Route>
